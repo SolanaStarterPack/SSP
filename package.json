@@ -13,7 +13,7 @@
 		"lint": "prettier --check ."
 	},
 	"engines": {
-		"node": "20.18.1"
+		"node": "20"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-vercel": "^5.5.0",
