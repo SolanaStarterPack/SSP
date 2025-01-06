@@ -1,4 +1,5 @@
 <script lang="ts">
+	import GitHubButton from '$lib/components/ssp/GitHubButton.svelte';
 	import LaunchButton from '$lib/components/ssp/LaunchButton.svelte';
 	import { Button } from '$lib/components/ui/button';
 	import { DropdownMenu, DropdownMenuTrigger } from '$lib/components/ui/dropdown-menu';
@@ -13,14 +14,10 @@
 		<DropdownMenu>
 			<DropdownMenuTrigger>
 				{#snippet child()}
-					<div class="space-x-2">
-						<Button
-							size="xl"
-							variant="ssp"
-							href="https://github.com/SolanaStarterPack/SSP"
-							target="_blank"
-						>
-							GitHub
+					<div class="flex items-center justify-end gap-x-2">
+						<GitHubButton />
+						<Button variant="ssp" size="xl" href="https://x.com/tradewithssp" target="_blank">
+							<span class="mr-2 text-lg">Follow SSP on X</span>
 						</Button>
 						<LaunchButton />
 					</div>
