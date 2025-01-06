@@ -1,19 +1,14 @@
 <script lang="ts">
 	import Contact from '$lib/blocks/ssp/Contact.svelte';
 	import Cta from '$lib/blocks/ssp/Cta.svelte';
+	import Dialogs from '$lib/blocks/ssp/Dialogs.svelte';
 	import Footer from '$lib/blocks/ssp/Footer.svelte';
 	import Header from '$lib/blocks/ssp/Header.svelte';
 	import Hero from '$lib/blocks/ssp/Hero.svelte';
 	import HowItWorks from '$lib/blocks/ssp/HowItWorks.svelte';
-	import { type Uniforms } from '$lib/components/ui/display/Blob.svelte';
-
-	const uniforms: Uniforms = {
-		size: {
-			type: 'f',
-			value: 1.2
-		}
-	};
 </script>
+
+<Dialogs />
 
 <Header />
 <div class="pt-32">

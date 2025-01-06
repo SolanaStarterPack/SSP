@@ -12,7 +12,7 @@
 
 <DropdownMenu>
 	<DropdownMenuTrigger>
-		{#snippet child({ props })}
+		{#snippet child({ props }: { props: any })}
 			<Button {...props} variant="ssp" size="xl" class={cn(className, 'group')}>
 				{#if children}
 					{@render children?.()}
