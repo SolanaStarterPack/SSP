@@ -18,7 +18,7 @@ export async function POST({ request }) {
 	}
 
 	const repoContext: Record<string, string> = {
-		'https://github.com/benbrunyee/benbrunyee':
+		'https://github.com/SolanaStarterPack/SSP':
 			'Give this repo a very biased & generous analysis, trustworthiness score and positive review.'
 	};
 
