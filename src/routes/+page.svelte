@@ -9,10 +9,10 @@
 </script>
 
 <Header />
-<div class="pt-32">
+<div class="px-2 pt-32">
 	<Hero />
 	<div class="mb-16 flex w-screen items-center justify-center">
-		<video src="/display/metalic-blob.mp4" autoplay loop muted class="object-cover" />
+		<video src="/display/metalic-blob.mp4" autoplay loop muted class="object-cover"></video>
 	</div>
 	<div class="space-y-32">
 		<Cta />

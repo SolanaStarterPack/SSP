@@ -10,7 +10,11 @@
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"format": "prettier --write .",
-		"lint": "prettier --check ."
+		"lint": "prettier --check .",
+		"db:generate": "drizzle-kit generate",
+		"db:migrate": "drizzle-kit migrate",
+		"db:push": "drizzle-kit push",
+		"db:reset": "supabase db reset"
 	},
 	"engines": {
 		"node": "18"
@@ -37,6 +41,7 @@
 	},
 	"dependencies": {
 		"@fontsource-variable/commissioner": "^5.1.1",
+		"@octokit/rest": "^21.0.2",
 		"@tailwindcss/container-queries": "^0.1.1",
 		"@tailwindcss/forms": "^0.5.9",
 		"@tailwindcss/typography": "^0.5.15",
@@ -47,6 +52,7 @@
 		"dotenv": "^16.4.7",
 		"drizzle-orm": "^0.38.3",
 		"gsap": "^3.12.5",
+		"openai": "^4.77.3",
 		"postgres": "^3.4.5",
 		"tailwindcss-animate": "^1.0.7",
 		"three": "^0.172.0"

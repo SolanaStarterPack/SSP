@@ -1,0 +1,1 @@
+ALTER TABLE "sspGitHubAnalysis" ALTER COLUMN "created_at" SET DATA TYPE timestamp;

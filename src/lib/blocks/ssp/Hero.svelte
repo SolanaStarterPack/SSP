@@ -6,7 +6,7 @@
 </script>
 
 <div class={cn(className, 'flex flex-col items-center')}>
-	<h1 class="text-center text-7xl font-bold leading-[1.2]">
+	<h1 class="text-center text-3xl font-bold leading-[1.2] md:text-7xl">
 		Solana Starter Pack<br />Navigate the market with confidence.
 	</h1>
 	<p class="mt-4 text-center text-xl">

@@ -1,7 +1,9 @@
-import { pgTable, serial, text, varchar } from 'drizzle-orm/pg-core';
+import { integer, pgTable, serial, text, timestamp, varchar } from 'drizzle-orm/pg-core';
 
-export const users = pgTable('users', {
-	id: serial('id').primaryKey(),
-	fullName: text('full_name'),
-	phone: varchar('phone', { length: 256 })
+export const sspGitHubAnalysis = pgTable('sspGitHubAnalysis', {
+	id: serial().primaryKey(),
+	repo: varchar({ length: 100 }).notNull(),
+	score: integer().notNull(),
+	analysis: text().notNull(),
+	createdAt: timestamp().notNull().defaultNow()
 });

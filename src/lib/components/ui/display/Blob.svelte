@@ -1,4 +1,4 @@
-<script lang="ts" context="module">
+<script lang="ts" module>
 	export type UniformFloatType = {
 		type: 'f';
 		value: number;
@@ -51,8 +51,8 @@
 	let shapeGroup = new THREE.Group();
 	let start = Date.now();
 	let mat: any | undefined;
-	let clientHeight = 0;
-	let clientWidth = 0;
+	let clientHeight = $state(0);
+	let clientWidth = $state(0);
 	let blobContainer: HTMLDivElement | undefined;
 	let dat: any;
 	const defaultUniforms: Required<Uniforms> = {
@@ -375,7 +375,7 @@
 	}
 </script>
 
-<div bind:this={blobContainer} />
+<div bind:this={blobContainer}></div>
 
 {@html `<script id="vertexShader" type="x-shader/x-vertex">
   vec3 mod289(vec3 x)
@@ -615,4 +615,4 @@
 	bind:clientHeight
 	{...restProps}
 	class={cn('h-full w-full overflow-visible')}
-/>
+></div>

@@ -54,3 +54,27 @@ export const flyAndScale = (
 		easing: cubicOut
 	};
 };
+
+/**
+ * A utility function that evaluates an expression and returns the result
+ * without having to assign it to a variable.
+ *
+ * Example:
+ *  const result = expr(() => 1 + 1); // result = 2
+ *
+ * @param cb The expression to execute.
+ * @returns The result of the expression.
+ */
+export const expr = <T extends (...args: any[]) => any>(cb: T): ReturnType<T> => {
+	return cb();
+};
+
+/**
+ * A TS utility to check whether a value is defined, i.e. non-null and non-undefined.
+ *
+ * @param value - The value to check.
+ * @returns Whether the value is defined.
+ */
+export function isDef<T>(value: T | null | undefined): value is NonNullable<T> {
+	return value !== null && value !== undefined;
+}

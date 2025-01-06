@@ -21,7 +21,7 @@
 </script>
 
 <div>
-	<h3 class="text-center text-6xl font-bold tracking-wide">How it works</h3>
+	<h3 class="text-center text-3xl font-bold tracking-wide md:text-6xl">How it works</h3>
 	<p class="mt-2 text-center">Deploy your AI agent within seconds.</p>
 	<div class="mt-16 flex flex-wrap-reverse items-center justify-center gap-4">
 		{#each cardProps as card}
