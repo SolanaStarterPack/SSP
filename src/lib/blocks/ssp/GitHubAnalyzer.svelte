@@ -29,6 +29,14 @@
 		submitting = true;
 		analysis = '';
 
+		// Validate GitHub URL
+		const url = new URL(repo);
+		if (url.hostname !== 'github.com') {
+			analysis = 'Invalid GitHub URL';
+			submitting = false;
+			return;
+		}
+
 		const response = await fetch('/api/analyze-repo');
 		const json = await response.json();
 
@@ -72,6 +80,7 @@
 				placeholder="https://github.com/username/repo"
 				required
 				class="mb-2"
+				type="url"
 			/>
 			<div
 				class={cn(

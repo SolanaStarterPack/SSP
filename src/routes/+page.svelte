@@ -8,8 +8,6 @@
 	import HowItWorks from '$lib/blocks/ssp/HowItWorks.svelte';
 </script>
 
-<Dialogs />
-
 <Header />
 <div class="pt-32">
 	<Hero />
@@ -23,3 +21,5 @@
 		<Footer />
 	</div>
 </div>
+
+<Dialogs />
