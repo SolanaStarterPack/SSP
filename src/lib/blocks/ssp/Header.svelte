@@ -1,5 +1,6 @@
 <script lang="ts">
 	import LaunchButton from '$lib/components/ssp/LaunchButton.svelte';
+	import { Button } from '$lib/components/ui/button';
 	import { DropdownMenu, DropdownMenuTrigger } from '$lib/components/ui/dropdown-menu';
 	import TwoHeader from '$lib/components/ui/headers/TwoHeader.svelte';
 </script>
@@ -12,7 +13,17 @@
 		<DropdownMenu>
 			<DropdownMenuTrigger>
 				{#snippet child()}
-					<LaunchButton />
+					<div class="space-x-2">
+						<Button
+							size="xl"
+							variant="ssp"
+							href="https://github.com/SolanaStarterPack/SSP"
+							target="_blank"
+						>
+							GitHub
+						</Button>
+						<LaunchButton />
+					</div>
 				{/snippet}
 			</DropdownMenuTrigger>
 		</DropdownMenu>
