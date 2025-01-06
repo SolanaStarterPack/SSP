@@ -1,27 +1,27 @@
 {
-  "version": "7",
-  "dialect": "postgresql",
-  "entries": [
-    {
-      "idx": 0,
-      "version": "7",
-      "when": 1736180497253,
-      "tag": "0000_tiny_abomination",
-      "breakpoints": true
-    },
-    {
-      "idx": 1,
-      "version": "7",
-      "when": 1736182915390,
-      "tag": "0001_gifted_whistler",
-      "breakpoints": true
-    },
-    {
-      "idx": 2,
-      "version": "7",
-      "when": 1736183758850,
-      "tag": "0002_lying_captain_flint",
-      "breakpoints": true
-    }
-  ]
+	"version": "7",
+	"dialect": "postgresql",
+	"entries": [
+		{
+			"idx": 0,
+			"version": "7",
+			"when": 1736180497253,
+			"tag": "0000_tiny_abomination",
+			"breakpoints": true
+		},
+		{
+			"idx": 1,
+			"version": "7",
+			"when": 1736182915390,
+			"tag": "0001_gifted_whistler",
+			"breakpoints": true
+		},
+		{
+			"idx": 2,
+			"version": "7",
+			"when": 1736183758850,
+			"tag": "0002_lying_captain_flint",
+			"breakpoints": true
+		}
+	]
 }

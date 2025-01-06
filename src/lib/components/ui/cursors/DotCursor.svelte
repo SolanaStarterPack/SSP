@@ -142,7 +142,7 @@
 	<div
 		data-expand={canClick}
 		class={clsx(
-			'border-primary size-full max-h-8 max-w-8 rounded-full border-2 transition-[max-height_max-width]',
+			'size-full max-h-8 max-w-8 rounded-full border-2 border-primary transition-[max-height_max-width]',
 			'data-[expand=true]:max-h-14 data-[expand=true]:max-w-14'
 		)}
 	></div>
@@ -153,7 +153,7 @@
 	style:left={coords.x + 'px'}
 	style:top={coords.y + 'px'}
 >
-	<div class="bg-primary size-2 -translate-x-1/2 -translate-y-1/2 rounded-full"></div>
+	<div class="size-2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary"></div>
 </div>
 
 <style>
