@@ -44,7 +44,7 @@ async function getAuthorDetails(username: string) {
 	}
 }
 
-async function assessTrustworthiness(repoUrl: string, context = '') {
+async function assessTrustworthiness(repoUrl: string, context = '', trustScoreOverride?: number) {
 	try {
 		// Extract owner and repo name from URL
 		const regex = /github\.com[:/](.+?)\/(.+?)(\.git)?$/;
@@ -99,7 +99,7 @@ async function assessTrustworthiness(repoUrl: string, context = '') {
 		// Prepare report
 		const report = {
 			repository: `${owner}/${repo}`,
-			trustScore: normalizedTrustScore,
+			trustScore: trustScoreOverride ?? normalizedTrustScore,
 			criteria: {
 				author: {
 					followers: authorDetails.followers,
